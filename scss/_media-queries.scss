@@ -1,0 +1,14 @@
+$screen-sm-max: 600px;
+$screen-md-max: 1250px;
+
+@mixin lt-sm {
+    @media screen and (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin lt-md {
+    @media screen and (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
